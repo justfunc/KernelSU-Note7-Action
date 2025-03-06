@@ -1,14 +1,14 @@
 name: Check and Build
 
 env:
-  kernel_repository: PixelExperience-Devices/kernel_xiaomi_sdm845
-  kernel_branch: fourteen
-  device: dipper
-  clang_version: r487747c
+  kernel_repository: Aeoniixx-Lavender/kernel_xiaomi_lavender-4.19
+  kernel_branch: 15.0
+  device: lavender
+  clang_version: r416183b
   defconfig: |
-    dipper_defconfig
+    vendor/lavender-perf_defconfig
   kernel_patch: |
-    backport-path-umount.patch
+  
   kernelsu_patch: |
 
 on:
